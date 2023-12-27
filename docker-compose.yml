@@ -3,7 +3,7 @@ services:
   netflix:
     image: summu97/netflix:v1
     ports:
-      - 81:80
+      - 90:80
     deploy:
       replicas: 3
  
