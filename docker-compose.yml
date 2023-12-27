@@ -1,26 +1,9 @@
 version: "3.8"
 services:
-  movies:
-    image: summu97/one:one
+  netflix:
+    image: summu97/netflix:v1
     ports:
       - 81:80
     deploy:
       replicas: 3
-  train:
-    image: summu97/two:one
-    ports:
-      - 82:80
-    deploy:
-      replicas: 3
-  recharge:
-    image: summu97/three:one
-    ports:
-      - 83:80
-    deploy:
-      replicas: 3
-  dth:
-    image: summu97/four:one
-    ports:
-      - 84:80
-    deploy:
-      replicas: 3
+ 
