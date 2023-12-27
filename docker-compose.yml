@@ -1,0 +1,26 @@
+version: "3.8"
+services:
+  movies:
+    image: summu97/one:v1
+    ports:
+      - 81:80
+    deploy:
+      replicas: 3
+  train:
+    image: summu97/two:v1
+    ports:
+      - 82:80
+    deploy:
+      replicas: 3
+  recharge:
+    image: summu97/three:v1
+    ports:
+      - 83:80
+    deploy:
+      replicas: 3
+  dth:
+    image: summu97/four:v1
+    ports:
+      - 84:80
+    deploy:
+      replicas: 3
